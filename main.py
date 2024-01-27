@@ -1,43 +1,14 @@
-##################################################
-'''
-Q1: 
-'''
+money = 1000.00
 
-# TODO: Write your code here
+def interest(percent, orig):
+    return orig * (percent / 100)
 
-##################################################
-'''
-Q2:
-'''
 
-# TODO: Write your code here
-
-##################################################
-'''
-Q3:
-'''
-
-# TODO: Write your code here
-
-##################################################
-'''
-Q4:
-'''
-
-# TODO: Write your code here
-
-##################################################
-'''
-Q5:
-'''
-
-# TODO: Write your code here
-
-##################################################
-'''
-Q6:
-'''
-
-# TODO: Write your code here
-
-##################################################
+for i in range(25):
+    balance = money + interest(money, 6.5)
+    if i + 1 < 10:
+        frontspace = '    '
+    else:
+        frontspace = '   '
+    print(f'{i + 1}:{frontspace}current balence: {money}, intrest: {interest(6.5, money)}, deposit: 100, new balance: {balance}')
+    money = balance + 100
